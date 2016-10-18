@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<kpiList>
+    <kpi>
+        <id>1</id>
+        <kpiType>T</kpiType>
+        <kpiName>Need to work on Assessment</kpiName>
+        <target>90</target>
+        <actual>85</actual>
+        <uom>%</uom>
+        <dueDate>2016-10-08</dueDate>
+        <createdOn></createdOn>
+        <updatedOn></updatedOn>
+    </kpi>
+    <kpi>
+        <id>2</id>
+        <kpiType>N</kpiType>
+        <kpiName>Learn React JS</kpiName>
+        <target>80</target>
+        <actual>72</actual>
+        <uom>%</uom>
+        <dueDate>2016-10-08</dueDate>
+        <createdOn></createdOn>
+        <updatedOn></updatedOn>
+    </kpi>
+    <kpi>
+        <id>3</id>
+        <kpiType>C</kpiType>
+        <kpiName>Work on clean code</kpiName>
+        <target>90</target>
+        <actual>85</actual>
+        <uom>%</uom>
+        <dueDate>2016-10-08</dueDate>
+        <createdOn></createdOn>
+        <updatedOn></updatedOn>
+    </kpi>
+    <kpi>
+        <id>4</id>
+        <kpiType>T</kpiType>
+        <kpiName>Do unit test on Assessment</kpiName>
+        <target>90</target>
+        <actual>75</actual>
+        <uom>%</uom>
+        <dueDate>2016-10-08</dueDate>
+        <createdOn></createdOn>
+        <updatedOn></updatedOn>
+    </kpi>
+</kpiList>

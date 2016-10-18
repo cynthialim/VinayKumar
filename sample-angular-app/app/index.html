@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nGager">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+  <div ng-view class="app-body"></div>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+  <script src="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+  <script src="app.js"></script>
+  <script src="src/shared/shared.main.js"></script>
+<!--
+  <script src="src/shared/landing/landing.config.js"></script>
+-->
+  <script src="src/shared/landing/landing.svc.js"></script>
+  <script src="src/shared/landing/landing.ctrl.js"></script>
+  <script src="src/modules/modules.main.js"></script>
+  <script src="src/modules/products/products.config.js"></script>
+  <script src="src/modules/products/products.svc.js"></script>
+  <script src="src/modules/products/products.ctrl.js"></script>
+  <script src="src/modules/products/productDetails.ctrl.js"></script>
+  <script src="src/modules/shopping/shopping.config.js"></script>
+  <script src="src/shared/signout/signout.js"></script>
+</body>
+</html>

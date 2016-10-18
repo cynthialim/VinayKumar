@@ -1,0 +1,27 @@
+<div class = "container-fluid">
+    <h1 class="header-title"> Products</h1>
+    <div ng-repeat="product in productsList" class = "col-sm-6 col-md-3">
+        <div class="product">
+            <div class = "thumbnail"  ng-click="goToDetailPage(product)">
+                <img src = "img/{{product.field}}.png" alt = "{{product.name}}">
+            </div>
+            <div class="chart-content pull-left">
+                <canvas id="pie" class="chart chart-pie"
+                        chart-data="data" chart-colors="colours" chart-labels="labels">
+                </canvas>
+            </div>
+            <div class = "caption">
+                <h4>{{product.name}}</h4>
+                <h5>{{getTimeDifference(product.expiryOn)}}</h5>
+                <p>
+                    <a href = "javascript:;">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    </a>
+                    <a href = "javascript:;">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

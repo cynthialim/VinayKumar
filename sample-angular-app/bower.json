@@ -1,0 +1,13 @@
+{
+  "name": "Angular-Application",
+  "description": "Simple SPA Application for an Auction Site",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-ui-router":"0.2.15",
+    "components-font-awesome":"",
+    "bootstrap":"~3.0"
+  }
+}

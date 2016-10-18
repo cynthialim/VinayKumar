@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default company-logo">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" style="padding: 10px 15px;"><img ng-src="img/logo.png" class="company-logo-icon" alt="Business Enhancement By World Class Action"/></a>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="main-container">
+    <div class="menu-container col-md-2">
+        <div id="sidebar-wrapper">
+            <ul class="nav nav-list bs-docs-sidenav affix-top">
+                <li class="sidebar-brand menu-item">
+                    <div class="thumbnail-profile"><img class="user-img" ng-src="img/{{userInfo.img}}.png" alt="" /></div>
+                    <div class="caption"><h4>{{userInfo.name}}</h4></div>
+                    <div class="credits"><span class="credit-span"></span>{{userInfo.points}}</div>
+                </li>
+                <li class="menu-item">
+                    <a ui-sref="products"> <i class="fa fa-bell pull-left" aria-hidden="true"></i>  AUCTION</a>
+                </li>
+                <li class="menu-item">
+                    <a ui-sref="shopping"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>  SHOP</a>
+                </li>
+                <li class="menu-item">
+                    <a ui-sref="signout"> <i class="fa fa-sign-out" aria-hidden="true"></i>  SIGN OUT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-10 main-content">
+        <!-- Page content-->
+        <div ui-view class="content-wrapper">Welcome, Please proceed to Auction Menu to see all the products available for bidding. Thank You!</div>
+    </div>
+</div>

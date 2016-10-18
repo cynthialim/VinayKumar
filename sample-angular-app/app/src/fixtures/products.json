@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Gym Card - Nordic Wellness",
+    "field": "gymcard1",
+    "img": "base64 form backend",
+    "description": "1 year of training with Nordic Wellness",
+    "price": "5990 SEK",
+    "expiryOn": "2016-08-26T05:34:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "2 Famous Novels Books",
+    "field": "novels",
+    "img": "base64 form backend",
+    "description": "A Portrait of the Artist as a Young Man, Invisible Man",
+    "price": "2999 SEK",
+    "expiryOn": "2016-08-29T06:34:00.000Z"
+  }
+]

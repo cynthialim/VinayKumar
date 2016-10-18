@@ -1,0 +1,10 @@
+{
+  "name": "React Application",
+  "description": "Simple SPA Application for Performance Management system",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "components-font-awesome":"",
+    "bootstrap":""
+  }
+}

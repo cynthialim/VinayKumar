@@ -1,0 +1,73 @@
+<div>
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-information-short">
+                    <div class="col-md-4">
+                        <div class = "product-image">
+                            <img src = "img/{{product.field}}.png" alt = "{{product.name}}">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>{{product.name}}</h3>
+                        <h4>{{getTimeDifference(product.expiryOn)}}</h4>
+                        <h5>{{product.description}}</h5>
+                        <div class="new-bidding">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Credit Balance</th>
+                                        <th>Increment / Decrement</th>
+                                        <th>Bid Value</th>
+                                        <th>Max Bid</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th><span class="credit-span"></span>{{userInfo.points - bidValue}}</th>
+                                    <td>
+                                        <div class="bid-value-change-icons">
+                                            <span class="increment-icon" ng-click="updateBidValue(true)"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i></span>
+                                            <span class="decrement-icon" ng-click="updateBidValue(false)"><i class="fa fa-caret-down fa-2x" aria-hidden="true"></i></span>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" min="1" max="{{userInfo.points}}" ng-model="bidValue" ng-change="updateBidValue()" class="form-control input-sm"/></td>
+                                    <td><b>{{maxBidValue}}</b></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-success btn-lg" ng-click="addNewBid()">Place Bid</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pull-right refresh-btn">
+        <button class="btn btn-primary btn-sm" ng-click="getProductHistory(product.field)"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
+    </div>
+    <h4>Product Bidding History</h4>
+    <div ng-if="productHistory.length == 0" class="history-content">
+        Be the first user to bid. Thank you!
+    </div>
+    <div class="row history-content" ng-if="productHistory.length > 0">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Bid Value</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in productHistory">
+                <th scope="row">{{$index+1}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.value}}</td>
+                <td>{{item.time}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
